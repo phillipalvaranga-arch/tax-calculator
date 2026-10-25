@@ -1,6 +1,6 @@
 const fs=require('fs'),T=require('../tax.js'),C=T.YEARS[2025];
 let pass=0,fail=0;const eq=(n,a,b)=>{if(a===b)pass++;else{fail++;console.log('FAIL',n,'got',a,'want',b);}};
-const txt=fs.readFileSync('__dirname+'/i1040gi.txt'','utf8').split('\n');
+const txt=fs.readFileSync(__dirname+'/i1040gi.txt','utf8').split('\n');
 // 1) Every row of the official 2025 Tax Table (Form 1040 instructions)
 const st=['single','mfj','mfs','hoh'];let rows=0;
 txt.slice(4740,6400).forEach(l=>{const n=l.trim().replace(/,/g,'').split(/\s+/).map(Number);
