@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Tax Calculator</title><meta name="theme-color" content="#0b0f17"><link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png"><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="top"><div class="brand"><span class="logo">$</span><div><b>Tax Calculator</b><small id="who">Federal estimate</small></div></div>
+<nav><button data-go="home">Returns</button><button data-go="sources">Sources</button><button data-go="about">Help</button></nav></header>
+<div id="prog" class="prog"><div class="bar"><i id="barfill"></i></div><div id="steplabel" class="steplabel"></div></div>
+<main id="main"></main>
+<div id="ticker" class="ticker hidden"><div><small id="tkLabel">Estimated refund</small><b id="tkVal">$0</b></div><div class="tkside"><small>Total tax</small><span id="tkTax">$0</span></div></div>
+<script src="tax.js"></script><script src="app.js"></script></body></html>
